@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 100%);
+  width: 98%;
+}
+
+.car1,
+.car2,
+.car3,
+.car4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+}
+
+.car1,
+.car2,
+.car3,
+.car4:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.car1 {
+  background-color: blue;
+}
+
+.car2 {
+  background-color: yellow;
+  color: #000
+}
+
+.car3 {
+  background: red;
+}
+
+.car4 {
+  background-color: #0F0;
+}
+
+.container {
+  position: relative;
+  left: 10px;
+  top: 220px;
+}
+
+.line {
+  height: 100%;
+  width: 30px;
+  background-color: #0F0;
+  position: absolute;
+  left: 90%;
+  top: 0;
+}
+
+.end {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(270deg);
+  top: 50%;
+  left: 3px;
+}
+
+
+#again {
+  background-color: #fa0;
+  border-radius: 5px;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 43%;
+  padding: 5px;
+  padding-top: 2px;
+  opacity: 0;
+  z-index: 10;
+  font-size: 18px;
+}
+
+#again:hover {
+  cursor: pointer;
+}
+
+#winner {
+  width: 400px;
+  height: 200px;
+  background-color: #222723;
+  z-index: 3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 150px;
+  left: 30%;
+  border: 1px solid #f59;
+  box-shadow: 0 0 10px #fff;
+  opacity: 0;
+  transition-delay: 10s;
+  transition: 4s;
+}
+
+.w-i {
+  color: #0f0;
+  font-weight: bold;
+  font-size: 30px;
+  transform: translateX(45px) translateY(-50px);
+}
+
+#W-name {
+  color: blue;
+  font-weight: bold;
+  font-size: 35px;
+  transform: translateX(-90px) translateY(0px);
+}
+
+.w-i::after {
+  content: '\f14a';
+  font-family: "FontAwesome";
+}
+
+
+
+/* Make Start Button  */
+
+.start-btn {
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #fb0, 0 0 10px #ffbb00be, 0 0 20px #ffbb008f, 0 0 40px #ffff00c5, 0 0 60px #0f0, 0 0 80px #ff0000c5, 0 0 100px #00f, 0 0 40px #ffff00c5, 0 0 60px #0f0, 0 0 80px #ff0000c5, 0 0 100px #00f;
+  border: none;
+  background: #fb0;
+  cursor: pointer;
+  user-select: none
+}
+
+.start {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  top: calc(100vh / 2)
+}
+
+.adress {
+  color: white;
+  position: absolute;
+  top: 100px;
+  font-size: 25px;
+}
+
+#adress {
+  position: absolute;
+  top: -250px;
+}
